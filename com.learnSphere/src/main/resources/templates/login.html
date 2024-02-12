@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-left">
+    </div>
+    <div class="login-right">
+      <h2>Login</h2>
+      <form action="/validateUser" method="post">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="LOGIN">
+      </form>
+      <a href="/register">New user? Register here</a>
+    </div>
+  </div>
+</body>
+</html>

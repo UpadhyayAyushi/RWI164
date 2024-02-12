@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADHIGAM - Home</title>
+<style>
+  /* Add your custom CSS styling here */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  .background-image {
+    background-image: url('images/img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .sidebar {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sidebar h1 {
+    display: block;
+    font-size: 3rem;
+    margin-top: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: white;
+  }
+  .sidebar button {
+    font-size: 1rem;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    text-align: center;
+    cursor: pointer;
+        
+  }
+  .sidebar button:hover {
+    color: black;
+    background-color: cornflowerblue;
+  }
+  .footer-contact {
+    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .animation-heading {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px;
+    animation: fadeInUp 2s ease-in-out infinite alternate;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Additional Styles for Boxes */
+  .courses {
+    margin-top: 100px;
+    background-color: pink;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .section-text {
+    font-size: 18px;
+    color: cornflowerblue;
+  }
+  .box {
+    width: 40;
+    padding: 20px;
+    background-color: pink;
+    border: 8px solid cornflowerblue;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .box h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  .box p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+  <div class="background-image">
+    <h1 class="animation-heading">Welcome! Let's explore and learn.</h1>
+  </div>
+
+  <div class="sidebar">
+    <h1>ADHIGAM</h1>
+    <button><a href="/login">LOGIN</a></button>
+    <button><a href="/register">REGISTER</a></button>
+    <div class="footer-contact">
+      <h5>Contact</h5>
+      <p>Email: priyalupadhay01@gmail.com<br>Phone: 9340390606</p>
+    </div>
+  </div>
+
+  <div class="courses container">
+    <h1 class="section-title">Courses</h1>
+    <p class="section-text">Unlock Unlimited Tech Courses</p>
+    <div class="box">
+      <h2>Development</h2>
+      <p>J2SE, J2EE, MySQL Database, Angular</p>
+    </div>
+    <div class="box">
+      <h2>Testing</h2>
+      <p>Manual Testing, Scrum Framework, Automation Testing, MySQL Database</p>
+    </div>
+  </div>
+
+</body>
+</html>
